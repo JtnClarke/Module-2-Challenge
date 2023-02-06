@@ -1,0 +1,147 @@
+:root {
+    --Theme_Blue: rgba(9, 5, 127, 0.851);
+    --Theme_Orange: rgba(222, 109, 4, 0.86);
+    --Theme_White: White;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    box-sizing: border-box;
+}
+
+    
+
+.Name {
+    padding: 20px;
+    background-color: var(--Theme_Orange);
+    display: flex;
+    justify-content: space-between
+}
+
+.Name h1 {
+    font-size: 60px;
+    color: var(--Theme_White);
+}
+
+.Name nav {
+    align-self: center;
+}
+
+.Name nav ul li {
+    display: inline-block;
+    font-size: 35px;
+
+}
+
+.Name nav ul li a {
+    text-decoration: none;
+    color: var(--Theme_White);
+    margin: 9px;
+}
+
+.Abt_Me {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.Abt_Me h2 {
+    font-size: 50px;
+    align-self: center;
+    margin: 20px;
+    
+}
+
+hr{
+    width: 75%;
+}
+
+.Abt_Me p {
+    
+    font-size: 20px;
+    padding: 50px;
+    margin: 10px;
+    line-height: 50px;
+
+}
+
+.Main {
+    display: block;
+    height: 100vh;
+
+}
+
+
+.work-section {
+    display: block;
+    width: 24.5%;
+    border: solid;
+    float: left;
+    padding: 20px;
+    margin: .25%;
+}
+
+Main section:hover {
+    background-color: var(--Theme_Blue);
+    box-shadow: 12px 12px 12px rgb(48, 48, 48);
+}
+
+.work-section img {
+    width: 100%;
+}
+
+.work-text {
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+.work-section header{
+    text-align: center;
+}
+
+.work-section header a{
+    text-decoration: none;
+    color: var(--Theme_Orange);
+    font-size: 25px;
+}
+
+.contact-me{
+    text-align: center;
+    font-size: 50px;
+}
+
+.footer{
+    border: solid;
+    width: 100%;
+    height: 200px;
+    background-color: var(--Theme_Orange);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.phone{
+    font-size: 45px;
+    color: var(--Theme_White);
+}
+
+
+@media screen and (max-width: 992px) {
+    .work-section {
+        width: 50%;
+    }
+
+    .Abt_Me{
+        display: block;
+    }
+
+    .Abt_Me h2{
+        text-align: center;
+    }
+
+    .Abt_Me p{
+        text-align: center;
+    }
+}
